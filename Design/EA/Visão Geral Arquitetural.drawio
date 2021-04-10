@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2021-04-10T00:00:04.251Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68" version="14.5.8" etag="hvLqB6ypAjApHvDM5wRA" type="github"><diagram id="HjDKn14XbRibgktnzxBT">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-10T00:12:33.516Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36 Edg/89.0.774.68" etag="I_mHcrWuw4DkprLvhUyB" version="14.5.8" type="github">
+  <diagram id="HjDKn14XbRibgktnzxBT" name="Page-1">
+    <mxGraphModel dx="732" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-1" value="Camada Visual" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="80" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-2" value="Camada de &lt;br&gt;Negócio" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-3" value="Camada de &lt;br&gt;Integração" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="180" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-4" value="Camada de Dados" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="182.5" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-10" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="yVnNQ_VUXnATPxX_5hG1-2" target="yVnNQ_VUXnATPxX_5hG1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="250" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-11" value="" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yVnNQ_VUXnATPxX_5hG1-3" target="yVnNQ_VUXnATPxX_5hG1-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="250" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yVnNQ_VUXnATPxX_5hG1-12" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="yVnNQ_VUXnATPxX_5hG1-4" target="yVnNQ_VUXnATPxX_5hG1-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="250" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
