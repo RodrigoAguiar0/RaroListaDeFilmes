@@ -26,7 +26,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.raro.ViewModel.ViewModelDetails;
+import com.example.raro.ViewModel.ViewModelMovieDetails;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
 
 
     final private Context context = this;
-    private ViewModelDetails controllerDetails;
+    private ViewModelMovieDetails controllerDetails;
     private RequestQueue mQueue;
     private ArrayList<Movie> movieList;
     private int page = 1;
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
         setSupportActionBar(toolbar);
 
         listView = findViewById(R.id.movies_list);
-        controllerDetails = new ViewModelDetails();
+        controllerDetails = new ViewModelMovieDetails();
         movieList = new ArrayList();
         PopulateList();
         listView.setOnScrollListener(this);
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Movie tempMovie = movieList.get(position);
-                Intent intent = new Intent(MainActivity.this, Details.class);
+                Intent intent = new Intent(MainActivity.this, MovieDetails.class);
                 intent.putExtra("Movie", tempMovie);
                 startActivity(intent);
             }

@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * @since  01/06/2021
  * @return movieList: Lista de filmes que foram adquiridos da base de dados através do Request.
  * */
-public class ViewModelDetails extends AppCompatActivity {
+public class ViewModelMovieDetails extends AppCompatActivity {
 
     private ArrayList <Movie> movieList = new ArrayList();
 

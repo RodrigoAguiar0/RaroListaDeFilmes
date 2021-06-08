@@ -66,7 +66,7 @@ public class MovieAdapter extends ArrayAdapter <Movie>{
         View listItem = convertView;
         if(listItem == null){
             listItem = LayoutInflater.from(movieAdapterContext)
-                    .inflate(R.layout.list_movies, parent, false);
+                    .inflate(R.layout.movie_details, parent, false);
         }
 
         poster = listItem.findViewById(R.id.movie_poster);

@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * @author Rodrigo Aguiar
  * @since  01/06/2021
  * */
-public class Details extends AppCompatActivity {
+public class MovieDetails extends AppCompatActivity {
 
     private TextView movieTitle,movieGenre, movieDetailsDetails, movieDetailsReview;
     private ImageView movieImage;

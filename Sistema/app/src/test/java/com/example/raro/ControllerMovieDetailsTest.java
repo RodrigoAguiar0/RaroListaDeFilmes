@@ -1,6 +1,6 @@
 package com.example.raro;
 
-import com.example.raro.ViewModel.ViewModelDetails;
+import com.example.raro.ViewModel.ViewModelMovieDetails;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -14,12 +14,12 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ControllerDetailsTest {
+public class ControllerMovieDetailsTest {
 
     @Test
     public void conversion_isCorrect() throws JSONException {
 
-        ViewModelDetails controllerDetails = new ViewModelDetails();
+        ViewModelMovieDetails controllerDetails = new ViewModelMovieDetails();
         JSONObject student1 = new JSONObject();
         try {
             student1.put("id", "3");

@@ -9,6 +9,6 @@
         android:label="MainActivity" />
     <activity
         android:id="@+id/details"
-        android:name="com.example.raro.Details"
+        android:name="com.example.raro.MovieDetails"
         android:label="Details" />
 </navigation>
