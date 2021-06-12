@@ -2,6 +2,7 @@ package com.example.raro;
 
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * Esta classe tem função de popular a tela activity_details fornecendo todos os detalhes que o
@@ -23,6 +25,7 @@ import java.util.ArrayList;
  * */
 public class MovieDetails extends AppCompatActivity {
 
+    final private Context context = this;
     private TextView movieTitle,movieGenre, movieDetailsDetails, movieDetailsReview;
     private ImageView movieImage;
     private Toolbar detailsToolbar;
@@ -75,6 +78,9 @@ public class MovieDetails extends AppCompatActivity {
 
         movieDetailsReview.setText("Nota média dos usuários: ".concat(movie.getVoteAverage()
                 .toString()));
+
+        LogRegister log = new LogRegister();
+        log.appendLog(Calendar.getInstance().getTime() + " Detalhes de filmes inseridos", context, this);
     }
 
 }

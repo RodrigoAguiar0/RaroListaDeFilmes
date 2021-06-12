@@ -81,7 +81,6 @@ public class MovieAdapter extends ArrayAdapter <Movie>{
 
         releaseDate = listItem.findViewById(R.id.movie_release_date);
         releaseDate.setText("Data de Lançamento: ".concat(moviesList.get(position).getReleaseDate()));
-
         return listItem;
     }
 }

@@ -33,6 +33,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 /**
  * Esta classe tem a função de controlar requisições à API que contém a base de dados, bem como
@@ -105,6 +106,9 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
             }
         });
         mQueue.add(request);
+
+        LogRegister log = new LogRegister();
+        log.appendLog(Calendar.getInstance().getTime() + " Lista de filmes populada", context, this);
     }
 
     /**
@@ -124,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
             }
         });
         listView.setAdapter(movieAdapter);;
+        LogRegister log = new LogRegister();
+        log.appendLog(Calendar.getInstance().getTime() + " Lista mostrada", context, this);
     }
 
     @Override
@@ -151,6 +157,8 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
                             preLast = lastItem;
                         }
                         PopulateList();
+                        LogRegister log = new LogRegister();
+                        log.appendLog(Calendar.getInstance().getTime() + " Lista incrementada", context, this);
                     }
             }
         }

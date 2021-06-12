@@ -4,5 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="toolbar_title">Últimos Filmes Lançados</string>
     <string name="details">Mais Detalhes</string>
+    <string name="password">SuaSenha</string>
+    <string name="login">exemplo@email.com</string>
+    <string name="loginButton">Login</string>
 
 </resources>
