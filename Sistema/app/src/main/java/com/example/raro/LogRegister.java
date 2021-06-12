@@ -16,8 +16,23 @@ import java.io.IOException;
 
 import static android.content.ContentValues.TAG;
 
+/**
+ * Essa classe é responsável por salvar diversos logs do aplicativo em um arquivo .txt externo,
+ * permitindo que auditoria possa ser feita no próprio dispositivo
+ *
+ * @author Rodrigo Aguiar
+ * @since 11/06/2021
+ */
 public class LogRegister {
 
+    /**
+     * Contém lógica responsável por criar o arquivo de logs e atualizar ele conforme novas
+     * informações são direcionadas.
+     *
+     * @param text: Mensagem para ser salva em logs
+     * @param context: Contexto que os logs estão sendo criados
+     * @param activity: Activity que chamou para salvar logs
+     */
     public void appendLog(String text, Context context, Activity activity) {
 
         if (ContextCompat.checkSelfPermission(context, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {

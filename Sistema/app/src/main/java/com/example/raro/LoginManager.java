@@ -6,6 +6,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+/**
+ * Essa classe iria funcionar como a classe de login, que cuida do login do usuário quando entra
+ * na plataforma. A ideia é que registrassemos no banco os usuários e eles pudessem entrar no
+ * aplicativo, mas ficamos sem tempo.
+ *
+ * @author Rodrigo Aguiar
+ * @since 11/06/2021
+ */
 public class LoginManager extends SQLiteOpenHelper {
 
     private Context context;
